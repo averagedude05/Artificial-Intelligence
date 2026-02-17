@@ -19,8 +19,6 @@ def table_driven_agent(percept):
 def lookup(p,t):
     return t[p]
 import random
-Location = random.choice(['A','B','C','D'])
-Condition= random.choice(['Clean','Dirty'])
 while True: # to perceieve environment repeatedly
     action = table_driven_agent((Location, Condition))
     print('Action Performed: '+ action)
